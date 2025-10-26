@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISH DASH - Bill Summary</title>
+    <link rel="stylesheet" href="bill.css">
+</head>
+<body>
+
+    <div class="bill-container">
+        <header>
+            <h1>Order Invoice</h1>
+            <p>Thank you for your purchase!</p>
+        </header>
+
+        <section class="order-info">
+            <h2>Order For: <span id="event-type"></span></h2>
+            <p>Date: <span id="bill-date"></span></p>
+        </section>
+
+        <section class="bill-details">
+            <table id="bill-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="bill-items">
+                    </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="grand-total-label">Grand Total</td>
+                        <td class="grand-total-amount" id="grand-total"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <footer class="bill-footer">
+            <p>THANK YOU!</p>
+            <p>HAVE A GOOD DAY</p>
+            <button onclick="window.print()">Print Bill</button>
+            <button onclick="window.location.href='index.html'">New Order</button>
+        </footer>
+    </div>
+
+    <script src="bill.js"></script>
+</body>
+</html>

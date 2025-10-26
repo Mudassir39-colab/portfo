@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISH DASH - Iraqui Mudassir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Plastic Plate Orders 🍽️</h1>
+        <p>Select your event and the quantity of plates you need.</p>
+
+        <div class="event-selector">
+            <label for="event-type">Select Function:</label>
+            <select id="event-type">
+                <option value="Wedding">Wedding</option>
+                <option value="Anniversary">Anniversary</option>
+                <option value="Birthday Party">Birthday Party</option>
+                <option value="Corporate Event">Corporate Event</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div id="plate-options" class="plate-container">
+            <div class="plate-card" data-price="5.50">
+                <img src="simple.jpg" alt="Standard Plate">
+                <h3>Standard White Plate</h3>
+                <p class="price">Price: ₹5.50 / plate</p>
+                <div class="quantity-control">
+                    <label for="plate1-qty">Quantity:</label>
+                    <input type="number" id="plate1-qty" class="plate-quantity" min="0" value="0">
+                </div>
+            </div>
+
+            <div class="plate-card" data-price="12.00">
+                <img src="gold.jpg" alt="Premium Plate">
+                <h3>Premium Gold-Rim Plate</h3>
+                <p class="price">Price: ₹12.00 / plate</p>
+                <div class="quantity-control">
+                    <label for="plate2-qty">Quantity:</label>
+                    <input type="number" id="plate2-qty" class="plate-quantity" min="0" value="0">
+                </div>
+            </div>
+
+            <div class="plate-card" data-price="8.75">
+                <img src="pattern.jpg" alt="Designer Plate">
+                <h3>Pattern Plate</h3>
+                <p class="price">Price: ₹8.75 / plate</p>
+                <div class="quantity-control">
+                    <label for="plate3-qty">Quantity:</label>
+                    <input type="number" id="plate3-qty" class="plate-quantity" min="0" value="0">
+                </div>
+            </div>
+        </div>
+
+        <button id="review-btn">Review Order</button>
+
+        <div id="order-summary" class="order-summary">
+            <h2>Your Order Summary</h2>
+            <p id="summary-event"></p>
+            <div id="summary-items"></div>
+            <p id="total-cost" class="total-cost"></p>
+            <button id="confirm-btn">Confirm & Get Bill</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
