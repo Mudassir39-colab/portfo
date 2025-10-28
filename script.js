@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    alert('Welcome to My Page');
     // Get all the buttons and display elements
     const reviewBtn = document.getElementById('review-btn');
     const confirmBtn = document.getElementById('confirm-btn');
@@ -88,4 +89,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
